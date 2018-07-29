@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.godic.fitravel.MainActivity"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    `<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_searchLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_saveLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:layout_weight="2"/>
+
+            <Button
+                android:id="@+id/btn_loadLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Load"
+                android:layout_weight="3"/>
+
+        <Button
+            android:id="@+id/btn_clearLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="clear"
+            android:layout_weight="4"/>
+
+        <Button
+            android:id="@+id/btn_searchDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="distance"
+            android:layout_weight="5"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Distance" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment"/>
+
+</LinearLayout>
