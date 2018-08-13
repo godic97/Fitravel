@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 intent.putExtra("max", markers.size());
                 startActivity(intent);
 //                for (int i = 1; i < markers.size(); i++) {
-//                    url = "https://maps.googleapis.com/maps/api/distancematrix/json?mode=driving&units=imperial&origins=" + markers.get(i-1).getPosition().latitude + "," + markers.get(i-1).getPosition().longitude + "&destinations=" + markers.get(i).getPosition().latitude + "," + markers.get(i).getPosition().longitude + "&key=AIzaSyAJqObzYRJXitd5ukKtBcQtNyHKQXyCzOs";
+//                    url = "https://maps.googleapis.com/maps/api/distancematrix/json?mode=driving&units=imperial&origins=" + markers.get(i-1).getPosition().latitude + "," + markers.get(i-1).getPosition().longitude + "&destinations=" + markers.get(i).getPosition().latitude + "," + markers.get(i).getPosition().longitude + "&key=YOUR_API_KEY";
 //                    url = url.replace(" ", "+");
 //                    Thread thread = new Thread(new Runnable() {
 //                        @Override
