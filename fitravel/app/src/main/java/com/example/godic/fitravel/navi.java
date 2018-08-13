@@ -74,7 +74,7 @@ public class navi extends AppCompatActivity implements OnMapReadyCallback {
 //     private GeoApiContext getGeoContext() {
 //         GeoApiContext geoApiContext = new GeoApiContext();
 //         return geoApiContext.setQueryRateLimit(3)
-//                 .setApiKey("AIzaSyDPWIQshTjTbE9B1o7C4ksZD6AaELDL0dk")
+//                 .setApiKey("YOUR_API_KEY")
 //                 .setConnectTimeout(1, TimeUnit.SECONDS)
 //                 .setReadTimeout(1, TimeUnit.SECONDS)
 //                 .setWriteTimeout(1, TimeUnit.SECONDS);
